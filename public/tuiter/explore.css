@@ -23,11 +23,12 @@
     padding: 10px 50px 10px 50px;
     width: 400px;
     margin-right: 50px;
+    margin-top: 8px;
     font-weight: bold;
 }
 
 .wd-links {
-    margin: 25px 0 25px 16px;
+    margin: 25px 0 20px 16px;
 }
 
 .wd-link-item {
@@ -64,6 +65,11 @@
     color: rgb(110, 118, 125)
 }
 
+.wd-content {
+    border-right: 1px solid;
+    border-color: rgb(47, 51, 54);
+}
+
 .wd-post-image {
     height: 100px;
     float: right;
@@ -72,4 +78,14 @@
 
 .wd-float-done {
     clear: both;
+}
+
+.wd-cog {
+    margin-left: auto;
+    margin-right: 12px
+}
+
+.wd-divider {
+    height: 10px;
+    background-color: rgb(47, 51, 54);
 }

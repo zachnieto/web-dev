@@ -90,8 +90,8 @@
     margin-top: 12px;
 }
 
-.wd-30 {
-    width: 30%;
+.wd-25 {
+    width: 24%;
     display: inline-block;
 }
 
@@ -112,5 +112,9 @@
     border-width: 1px;
     border-top-width: 0;
 
+}
+
+.wd-post-action-element {
+    text-decoration: none;
 }
 
