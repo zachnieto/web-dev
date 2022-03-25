@@ -6,7 +6,7 @@ const NavigationSidebar = (
     }) => {
 
     return(
-        <div className="col-xxl-2 col-xl-2 col-lg-1 col-sm-2 ps-lg-0">
+        <div>
             <ul className="nav nav-pills vstack mt-1 mb-1 list-group">
                 <li className="nav-item list-group-item"><a className="nav-link wd-left-nav-link"><i className="fab fa-twitter ps-2 pe-1"></i></a></li>
                 <li className="nav-item list-group-item"><a className={`nav-link wd-left-nav-link ${active === 'home' && "active"}`}><i className="fas fa-home ps-2 pe-1"></i><div className="d-none d-xl-inline">Home</div></a></li>

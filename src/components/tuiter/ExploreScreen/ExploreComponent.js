@@ -5,7 +5,7 @@ import "./explore.css"
 
 const ExploreComponent = () => {
     return(
-        <div className="col-xxl-6 col-xl-6 col-lg-7 col-sm-10">
+        <div>
          <div className="wd-top-bar m-1">
             <input className="form-control rounded-pill wd-search-bar" placeholder="Search Twitter"/>
             <i className="fas fa-search"></i>
