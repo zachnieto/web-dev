@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
+import {deleteTuit} from "../../../actions/tuits-actions";
 
 
 
@@ -8,9 +9,6 @@ import TuitStats from "./tuit-stats";
 const TuitListItem = ({tuit}) => {
 
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
 
     return (
         <div className="card p-2 border-bottom-0">
@@ -25,7 +23,7 @@ const TuitListItem = ({tuit}) => {
                         </span>
                     <span className="text-muted d-inline ps-1">@{tuit.handle}</span>
 
-                    <i onClick={() => deleteTuit(tuit)} className="fas fa-ban fa-pull-right wd-white"/>
+                    <i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-ban fa-pull-right wd-white"/>
 
                     <span className="card-text d-block text-white"><b>{tuit.tuit}</b></span>
                     {'attachments' in tuit && ('video' in tuit.attachments ?
