@@ -12,7 +12,7 @@ const WhoToFollowList = () => {
             </div>
                 {who.map(who => {
                         return(
-                            <WhoToFollowListItem who={who}/>
+                            <WhoToFollowListItem key={who.handle} who={who}/>
                         );
                     })
                 }
